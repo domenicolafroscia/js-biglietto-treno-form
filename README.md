@@ -23,18 +23,18 @@ Fare struttura HTML
 **Dati**
 
 1. Prelevare il numero di km che vuole percorrere il passeggero dall'input;
-2. Prelevare l'età del passeggero dal select
+2. Prelevare l'età del passeggero dall'input.
 
 **Logica**
 
 1. Calcolare il prezzo del biglietto per tutti moltiplicando i km che deve percorrere il passeggero x 0.21;
 2. Calcolare il prezzo del biglietto con lo sconto del 20% per i minorenni;
-3. Calcolare il prezzo del biglietto con lo sconto del 40% per gli over 65.
-4. Creare 2 input e un bottone con le caratteristiche elencate nei Dati;
+3. Calcolare il prezzo del biglietto con lo sconto del 40% per gli over 65;
+4. Mettere in funzione gli input e il button con le caratteristiche elencate qui sopra;
 5. Preparare il testo del messaggio da stampare in base al prezzo del biglietto.
 
 **Output**
 
-1. Trovare l'elemento in HTML dove stampare il risultato
-2. Iserire il messaggio in questo elemento
-3. Al click del bottone stampa il messaggio
+1. Trovare l'elemento in HTML dove stampare il risultato;
+2. Iserire il messaggio in questo elemento;
+3. Al click del bottone stampa il messaggio.
