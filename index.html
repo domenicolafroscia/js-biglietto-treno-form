@@ -1,31 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto treno form</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- Domande -->
-    <section class="module">
-        <div class="input">
-            <input type="number" id="km" placeholder="Km da percorrere">
-        </div>
+    <!-- main -->
+    <main>
+        <div class="container">
+            
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            
+            <!-- section ticket-1 -->
+            <div class="ticket">
+                
+                <!-- Domande -->
+                <section class="module">
+                    <div class="input">
+                        <input type="text" id="name" placeholder="Nome completo">
+                        <input type="number" id="km" placeholder="Km da percorrere">
+                        <input type="number" id="age" placeholder="Età">
+                    </div>
 
-        <div class="input">
-            <input type="number" id="age" placeholder="Età">
-        </div>
+                    <div class="buttons">
+                        <button id="send">Invia</button>
+                        <button id="clear">Cancella</button>
+                    </div>
+                </section>
 
-        <div class="button">
-            <button id="send">Invia</button>
+            </div>
+            <!-- /section ticket-1 -->
+
+            <h2>IL TUO BIGLIETTO</h2>
+            
+            <!-- section ticket-2 -->
+            <div class="ticket-result">
+                <section class="results">
+                    
+                    <h3>Dettaglio passeggeri</h3>
+                    <hr>
+                    
+                    <div class="row">
+                        <div class="col col-1">
+                            <h3>NOME PASSEGGERO</h3>
+                            <p id="name-result"></p>
+                        </div>
+                        
+                        <div class="col col-2">
+                            <ul>
+                                <li>
+                                    <h4>Offerta</h4>
+                                    <p>Biglietto Standard</p>
+                                </li>
+                                <li>
+                                    <h4>Carrozza</h4>
+                                    <p>5</p>
+                                </li>
+                                <li>
+                                    <h4>Codice CP</h4>
+                                    <p>92911</p>
+                                </li>
+                                <li>
+                                    <h4>Costo biglietto</h4>
+                                    <!-- Risultato -->
+                                    <p id="result"></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr>
+                </section>
+            </div>
+            <!-- /section ticket-2 -->
+
         </div>
-    </section>
-    
-    <!-- Risultato -->
-    <h2 id="result"></h2>
-    
+    </main>
+    <!-- /main -->
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -5,6 +5,9 @@ console.log(userKmElem);
 const userAgeElem = document.getElementById("age");
 console.log(userAgeElem);
 
+const usernameElem = document.getElementById("name");
+console.log(usernameElem);
+
 const number = 0.21;
 console.log(number);
 
@@ -13,6 +16,7 @@ sendBtn.addEventListener("click", function () {
     console.log(sendBtn);
     const userKm = userKmElem.value;
     const userAge = userAgeElem.value;
+    const username = usernameElem.value;
     console.log(userKm, userAge);
 
     // Logica
@@ -29,26 +33,21 @@ sendBtn.addEventListener("click", function () {
 
     const p = product.toFixed(2);
     console.log(p, typeof p);
-    let totalPrice = `${p}€`;
-    console.log(totalPrice);
 
     // Preparazione messaggio
-    let message = 0;
-
-    if (userAge < 18) {
-        message = "Questo è il prezzo totale con uno sconto applicato del 20%: "
-    } else if (userAge > 65) {
-        message = "Questo è il prezzo totale con uno sconto applicato del 40%:"
-    } else {
-        message = "Questo è il prezzo totale:"
-    }
-
-    console.log(message);
-
-    const messageComplete = `${message + " " + totalPrice}`;
-    console.log(messageComplete);
+    const totalPrice = `${p}€`;
+    console.log(totalPrice);
 
     // Output
-    document.getElementById("result").innerHTML = messageComplete;
-})
+    document.getElementById("result").innerHTML = totalPrice;
+    document.getElementById("name-result").innerHTML = username;
+});
+
+document.getElementById("clear").addEventListener("click", function() {
+    userKmElem.value = "";
+    userAgeElem.value = "";
+    usernameElem.value = "";
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("name-result").innerHTML = "";
+});
 
